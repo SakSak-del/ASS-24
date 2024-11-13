@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="./img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <title>Fresh Feast</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .heading {
+      color: white;
+      background-color: #86592d;
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .title {
+      color: rgb(29, 161, 53);
+      font-size: 23px;
+      font-family: cursive;
+      display: inline-block;
+    }
+
+    .nav {
+      background-color: rgb(187, 236, 171);
+      height: 40px;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .nav a {
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .img {
+      height: 700px;
+      width: 100%;
+      max-width: 720px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .info {
+      font-size: 20px;
+      text-align: center;
+      padding: 20px 10px;
+      background-color: rgb(187, 236, 171);
+    }
+
+    .info1 {
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 50px 0;
+    }
+
+    .cards {
+      border-radius: 10px;
+      font-size: 20px;
+      height: 200px;
+      width: 100%;
+      max-width: 380px;
+      padding: 5px;
+      margin: 10px;
+    }
+
+    .cards .img {
+      background-color: rgb(187, 236, 171);
+      height: 200px;
+      width: 100%;
+      max-width: 300px;
+      border: 5px solid rgb(20, 168, 57);
+      border-radius: 10px;
+    }
+
+    .card-container1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .sweet1 {
+      background-color: rgb(187, 236, 171);
+      width: 200px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 4px double rgb(20, 168, 57);
+      margin: 20px;
+      text-align: center;
+    }
+
+    .sweet1:hover {
+      background-color: #4ec256;
+    }
+
+    .sweet-img1 {
+      height: 180px;
+      width: 200px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+
+    .btn {
+      background-color: #92caa0;
+      padding: 8px 25px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto;
+    }
+
+   
+
+    /* For tablets and smaller devices */
+    @media (max-width: 768px) {
+      .info {
+        font-size: 18px;
+      }
+
+      .info1 {
+        font-size: 40px;
+      }
+
+      .img {
+        height: auto;
+        width: 100%;
+      }
+
+      .cards {
+        width: 80%;
+      }
+
+      .sweet1 {
+        width: 150px;
+        margin: 15px;
+      }
+
+      .sweet-img1 {
+        height: 150px;
+        width: 150px;
+      }
+
+      .btn {
+        padding: 6px 20px;
+      }
+    }
+
+    /* For mobile devices */
+    @media (max-width: 480px) {
+      .title {
+        font-size: 20px;
+      }
+
+      .nav {
+        height: auto;
+        font-size: 14px;
+        padding: 5px;
+      }
+
+      .nav a {
+        margin: 0 5px;
+      }
+
+      .info {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .info1 {
+        font-size: 30px;
+      }
+
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cards {
+        width: 90%;
+        font-size: 18px;
+      }
+
+      .sweet1 {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .sweet-img1 {
+        height: 120px;
+        width: 100%;
+      }
+
+      .btn {
+        padding: 6px 15px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/logo_1.png" height="40px"/> 
+  <p class="title">Fresh Feasts</p>  
+  <img src="./img/search.png" height="32px"/>
+  <img src="./img/cart.png" height="38px"/>
+  
+  <p class="nav">
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT US</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="location.html">LOCATION</a>
+    <a href="products.html">PRODUCTS</a>
+  </p>
+
+  <p class="info">Fresh vegetables - 100% chemical-free produce, harvested for your order, ensuring peak ripeness and exceptional taste.</p>
+  <img src="./img/home_img.png" class="img"/>
+  <hr>
+
+  <u><h2 class="info1">Explore By Categories</h2></u>
+  <div class="card-container">
+    <div class="cards">
+      <img src="./img/card1.jpg" class="img" />
+    </div>
+    <div class="cards">
+      <img src="./img/card2.png" class="img" /> 
+    </div>
+    <div class="cards">
+      <img src="./img/card3.png" class="img" />
+    </div>
+  </div>
+
+  <u><h2 class="info1">Deal of The Week</h2></u>
+  <div class="card-container1">
+    <div class="sweet1"> 
+      <img src="./img/img1.jpg" class="sweet-img1"/>
+      <p> Ladies Finger </p>
+      <p><b>Price:</b> 200/-</p>
+      <button class="btn">Add to cart</button>
+    </div>
+    <div class="sweet1"> 
+      <img src="./img/img2.jpg" class="sweet-img1"/>
+      <p>Pineapple semi-ripe (800g-1.5kg)</p>
+      <p><b>Price:</b> 95/-</p>
+      <button class="btn">Add to cart</button>
+    </div>
+    <div class="sweet1"> 
+      <img src="./img/img3.jpg" class="sweet-img1"/>
+      <p>salad cucumber</p>
+      <p><b>Price:</b> 30/-</p>
+      <button class="btn"> Add to card</button>
+  </div>
+  <div class="sweet1"> 
+      <img src="./img/img4.jpg" class="sweet-img1"/>
+      <p>cauliflower 1 (600g-900g) </p>
+      <p><b>Price:</b> 55/-</p>
+      <button class="btn"> Add to card</button>
+  </div>
+</div>
+
+
+<div class="card-container1">
+  <div class="sweet1"> 
+    <img src="./img/img5.jpg" class="sweet-img1"/>
+    <p> carrot stick cut (250gm)</p>
+    <p><b>Price:</b> 49/-</p>
+    <button class="btn"> Add to card</button>
+  </div>
+  <div class="sweet1"> 
+    <img src="./img/img6.jpg" class="sweet-img1"/>
+    <p> sambar cut mini pack(250g)</p>
+    <p><b>Price:</b> 59/-</p>
+    <button class="btn">Add to card</button>
+  </div>
+  
+  <div class="sweet1"> 
+    <img src="./img/img7.jpg" class="sweet-img1"/>
+    <p>avial cut family pack(500g)</p>
+    <p><b>Price:</b> 89/-</p>
+    <button class="btn"> Add to card</button>
+  </div>
+  <div class="sweet1"> 
+    <img src="./img/img8.jpg" class="sweet-img1"/>
+    <p>big onion (950gm1050gm) </p>
+    <p><b>Price:</b> 56/-</p>
+    <button class="btn"> Add to card</button>
+  </div>
+  </div>
+
+  <p class="info">We are working towards safe food - Nutri-Locked and hygienic as well.</p>
+  <img src="./img/farmer_to_plate_v2.jpg" class="img"/>
+  <img src="./img/cd1.jpg" class="img"/>
+</body>
+</html>
