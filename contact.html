@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+    <link rel="icon" href="https://sweetjane.qodeinteractive.com/wp-content/uploads/2018/11/shop-img-12.jpg" type="image/jpg">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <style>
+        .heading {
+            text-align: center;
+            color: rgb(29, 161, 53);
+            background-color: white;
+            font-family: Aboreto;
+            font-size: 40px;
+            padding: 12px;
+        }
+        
+        body {
+            background-color: #e49986;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-form-2 {
+            background-color: #fff;
+            width: 40%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        .pointer {
+            cursor: pointer;
+            height: 40px;
+            margin: 0 10px;
+        }
+
+        .menubar a {
+            text-decoration: none;
+            color: inherit;
+            margin: 0 15px;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px) {
+            .contact-form-2 {
+                width: 80%;
+                padding: 15px;
+            }
+            
+            .heading {
+                font-size: 30px;
+                padding: 8px;
+            }
+            
+            .pointer {
+                height: 30px;
+            }
+
+            .menubar {
+                text-align: center;
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+
+        /* Media Query for very small screens */
+        @media (max-width: 480px) {
+            .contact-form-2 {
+                width: 90%;
+            }
+
+            .heading {
+                font-size: 24px;
+            }
+
+            .form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+                font-size: 14px;
+            }
+
+            .form-group input[type="submit"] {
+                padding: 8px 16px;
+            }
+
+            .menubar a {
+                margin: 0 10px;
+                font-size: 12px;
+            }
+
+            .pointer {
+                height: 25px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="menubar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="products.html">PRODUCTS</a>
+        <a href="location.html">LOCATION</a>
+    </p>
+
+    <p class="heading">Contact Us - Fresh veggies are waiting!</p> 
+       
+	<div class="contact-form-2">
+		<h2>Contact Us</h2>
+		<form>
+			<div class="form-group">
+				<input type="text" id="name" name="name" placeholder="Your Name">
+			</div>
+			<div class="form-group">
+				<input type="email" id="email" name="email" placeholder="Your Email">
+			</div>
+			<div class="form-group">
+				<textarea id="comment" name="comment" placeholder="Your Comment"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Send Message">
+			</div>
+		</form>
+	</div>
+
+    <div style="text-align:center; padding: 20px;">
+        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" class="pointer" alt="Social Icon"/>
+        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670032.png" class="pointer" alt="Social Icon"/>
+        <img src="https://cdn-icons-png.flaticon.com/128/2504/2504839.png" class="pointer" alt="Social Icon"/>
+        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" class="pointer" alt="Social Icon"/>
+    </div>
+</body>
+</html>
