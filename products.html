@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Location</title>
+    <link rel="icon" href="./../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <style>
+        .heading {
+            text-align: center;
+            color: rgb(29, 161, 53);
+            font-family: Aboreto;
+            font-size: 30px;
+            padding: 12px;
+        }
+        
+        .card-container1 {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+        }
+        
+        .sweet1 {
+            background-color: rgb(187, 236, 171);
+            width: 200px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 4px double rgb(20, 168, 57);
+            margin: 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .sweet1:hover {
+            background-color: #4ec256;
+        }
+
+        .sweet-img1 {
+            height: 180px;
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #92caa0;
+            padding: 8px 25px;
+            border-radius: 30px;
+            border: none;
+            display: block;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        .nav {
+            background-color: rgb(187, 236, 171);
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        
+        @media (max-width: 1024px) {
+            .card-container1 {
+                justify-content: center;
+            }
+
+            .sweet1 {
+                width: 180px;
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card-container1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sweet1 {
+                width: 90%;
+                max-width: 250px;
+            }
+
+            .heading {
+                font-size: 24px;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+                height: auto;
+                padding: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sweet-img1 {
+                height: 150px;
+                width: 100%;
+            }
+
+            .sweet1 {
+                width: 100%;
+                max-width: 200px;
+                margin: 15px auto;
+            }
+
+            .heading {
+                font-size: 20px;
+            }
+
+            .btn {
+                padding: 5px 15px;
+            }
+
+            .nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+            }
+
+            .nav a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="nav">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a> 
+        <a href="contact.html">CONTACT</a>
+        <a href="location.html">LOCATION</a>
+    </p>
+
+    <p class="heading">Explore Fresh vegetables</p>
+    <div class="card-container1">
+        <div class="sweet1"> 
+            <img src="./img/okra.png" class="sweet-img1"/>
+            <p>Fresh Ladyfinger</p>
+            <p><b>Price:</b> 40/- (500g)</p>
+            <button class="btn">Add to cart</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/onion.png" class="sweet-img1"/>
+            <p>Onion</p>
+            <p><b>Price:</b> 50/- (1/2kg)</p>
+            <button class="btn">Add to cart</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/cauliflower.jpg" class="sweet-img1"/>
+            <p>  fresh cauliflower</p>
+            <p><b>Price:</b> 45/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/cabbage.jpg" class="sweet-img1"/>
+            <p>Cabbage </p>
+            <p><b>Price:</b> 38/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/beans.jpg" class="sweet-img1"/>
+            <p>Green Beans </p>
+            <p><b>Price:</b> 300/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+    </div>
+    
+    <div class="card-container1">
+    <div class="sweet1"> 
+            <img src="./img/potato.png" class="sweet-img1"/>
+            <p> Potato </p>
+            <p><b>Price:</b> 35/-(kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/carrot.jpg" class="sweet-img1"/>
+            <p> Hybrid Carrot</p>
+            <p><b>Price:</b> 40/-(500)</p>
+            <button class="btn">Add to card</button>
+        </div>
+       
+        <div class="sweet1"> 
+            <img src="./img/cauliflower.jpg" class="sweet-img1"/>
+            <p>cauliflower</p>
+            <p><b>Price:</b> 30/-(1/2kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/tomato.jpg" class="sweet-img1"/>
+            <p>Fresh Red Tomato </p>
+            <p><b>Price:</b> 30/-(1/2kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/greenchillis.jpg" class="sweet-img1"/>
+            <p>Green Chillis </p>
+            <p><b>Price:</b> 25/-(1/2kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+    </div>
+
+
+
+    <p class="heading">Fresh vegetables</p>
+    <div class="card-container1">
+    <div class="sweet1"> 
+            <img src="./img/orange.png" class="sweet-img1"/>
+            <p>Nagpur Orange</p>
+            <p><b>Price:</b> 60/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/watermelon.jpg" class="sweet-img1"/>
+            <p> Summer Watermelon</p>
+            <p><b>Price:</b> 35/-(1/2kg)</p>
+            <button class="btn">Add to card</button>
+        </div>
+       
+        <div class="sweet1"> 
+            <img src="./img/redgrapes.jpg" class="sweet-img1"/>
+            <p>Red Grapes</p>
+            <p><b>Price:</b> 40/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/kiwi.png" class="sweet-img1"/>
+            <p>Fresh kiwi</p>
+            <p><b>Price:</b> 120/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/pomegranate.png" class="sweet-img1"/>
+            <p>Fresh Farm pomegranate </p>
+            <p><b>Price:</b> 50/-(1kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+    </div>
+    
+    <div class="card-container1">
+    <div class="sweet1"> 
+            <img src="./img/papaya.png" class="sweet-img1"/>
+            <p> Papaya</p>
+            <p><b>Price:</b> 20/-(1/2kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/pineapple.png" class="sweet-img1"/>
+            <p> PineApple</p>
+            <p><b>Price:</b> 60/-(1PC)</p>
+            <button class="btn">Add to card</button>
+        </div>
+       
+        <div class="sweet1"> 
+            <img src="./img/dragonfruit.png" class="sweet-img1"/>
+            <p>Fresh Purple Dragonfruit</p>
+            <p><b>Price:</b> 80/-(1PC)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/custardapple.png" class="sweet-img1"/>
+            <p>Custard Apple</p>
+            <p><b>Price:</b> 35/-(1/2kg)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/guava.png" class="sweet-img1"/>
+            <p>Green guava </p>
+            <p><b>Price:</b> 30/-(1PC)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+    </div>
+    
+
+    <p class="heading">Leafy Greens</p>
+    <div class="card-container1">
+    <div class="sweet1"> 
+            <img src="./img/mintt.png" class="sweet-img1"/>
+            <p>Fresh Mint</p>
+            <p><b>Price:</b> 15/-(100gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/Palal.png" class="sweet-img1"/>
+            <p> Palak(Root-cut)</p>
+            <p><b>Price:</b> 29/-(150gm)</p>
+            <button class="btn">Add to card</button>
+        </div>
+       
+        <div class="sweet1"> 
+            <img src="./img/parsley.png" class="sweet-img1"/>
+            <p>parsley</p>
+            <p><b>Price:</b> 22/-(100 gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/methi.jpg" class="sweet-img1"/>
+            <p>Fresh Methi</p>
+            <p><b>Price:</b> 21/-(100gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/italian basil.png" class="sweet-img1"/>
+            <p>italian basil </p>
+            <p><b>Price:</b> 20/-(100gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+    </div>
+    
+    <div class="card-container1">
+    <div class="sweet1"> 
+            <img src="./img/lattice.png" class="sweet-img1"/>
+            <p> lattice</p>
+            <p><b>Price:</b> 20/-(100gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/coriander.png" class="sweet-img1"/>
+            <p> PineApple</p>
+            <p><b>Price:</b> 60/-(1PC)</p>
+            <button class="btn">Add to card</button>
+        </div>
+       
+        <div class="sweet1"> 
+            <img src="./img/leeks.png" class="sweet-img1"/>
+            <p>leeks(Root cut)</p>
+            <p><b>Price:</b> 165/-(200gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/thyme.png" class="sweet-img1"/>
+            <p>Thyme</p>
+            <p><b>Price:</b> 20/-(25gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+        <div class="sweet1"> 
+            <img src="./img/arugula.png" class="sweet-img1"/>
+            <p>Arugula(Rocket) </p>
+            <p><b>Price:</b> 25/-(100gm)</p>
+            <button class="btn"> Add to card</button>
+        </div>
+    </div>
+
+</body>
+</html>
