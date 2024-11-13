@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About page</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .heading {
+            text-align: center;
+            color: white;
+            background-color: rgb(187, 236, 171);
+            font-family: 'Aboreto', cursive;
+            font-size: 30px;
+            padding: 12px;
+        }
+        .subhead {
+            text-align: center;
+            font-family: 'Aboreto', cursive;
+            font-size: 20px;
+            padding: 12px;
+        }
+        .card-container, .card-container2 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .nav {
+            background-color: rgb(187, 236, 171);
+            height: 40px;
+            text-align: center;
+        }
+        .card:hover, .card1:hover {
+            background-color: #4ec256;
+        }
+        .card1 {
+            background-color: #c38a8a;
+            width: 200px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 4px double #734d26;
+            margin: 20px;
+            text-align: center;
+        }
+        .card-2 {
+            background-color: white;
+            width: 200px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+        .img1 {
+            height: 300px;
+            width: 200px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .img2 {
+            height: 350px;
+            width: 400px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .info {
+            font-size: 20px;
+            text-align: center;
+            padding: 20px 10px;
+            background-color: rgb(187, 236, 171);
+        }
+        .info_1, .info_2 {
+            font-size: 20px;
+            padding: 20px 10px;
+        }
+        .info_2 {
+            text-align: center;
+        }
+        
+        
+        
+        /* Large screens  */
+        @media (min-width: 992px) {
+            .heading {
+                font-size: 36px;
+            }
+            .subhead {
+                font-size: 24px;
+            }
+        }
+
+        /* Medium screens */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .img2 {
+                width: 80%;
+                height: auto;
+            }
+            .card1, .card-2 {
+                width: 180px;
+            }
+            .info_1, .info_2 {
+                font-size: 18px;
+            }
+        }
+
+        /* Small screens */
+        @media (max-width: 767px) {
+            .heading {
+                font-size: 24px;
+                padding: 8px;
+            }
+            .subhead {
+                font-size: 18px;
+            }
+            .card1, .card-2 {
+                width: 100%;
+                margin: 10px;
+            }
+            .img1, .img2 {
+                width: 90%;
+                height: auto;
+            }
+            .info, .info_1, .info_2 {
+                font-size: 16px;
+                padding: 10px;
+            }
+            .nav {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p class="nav">
+        <a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;
+        <a href="about.html">ABOUT US</a>&nbsp;&nbsp;&nbsp;
+        <a href="products.html">PRODUCTS</a>&nbsp;&nbsp;&nbsp;
+        <a href="location.html">LOCATION</a>
+    </p>
+
+    <div>
+        <h1 class="heading"> All about Fresh Feast </h1>  
+    </div>
+    
+    <img src="./img/mayank.png" class="img2">
+    <h3 class="subhead"> Mayank Chaurasia, the company's founder</h3>
+    <p class="info_1">
+        Our Journey...
+        This is what Fresh Feast, a startup born in the midst of the pandemic, is doing with its online- to-offline model of distributing fruits and vegetables.
+        Fresh Feast is the creation of eGreen Farms, a food retail company based in Delhi that was established in 2018. Mayank Chaurasia, the company's founder, begin developing VegEase well before the pandemic began. However, due to the COVID-19 outbreak, its introduction was pushed back. The platform was finally launched in January 2021
+        What Problems does Fresh Feast Solve?
+        Essentially,Fresh Feast provides a future-ready experience for purchasing farm-fresh Fruits and Vegetables, in which customers can book a grocery cart on the app (similar to booking a cab), wait for it to arrive at their door, and handpick the best stock themselves. VegEase employs specialized supply logistics to deliver exclusive carts containing variety of Fruits and Vegetables at the customer's defined time slot. The carts are organized by localities/sectors.
+    </p>
+
+    <h3 class="info">Mayank, the company's founder, says:</h3>
+    <p class="info_1">
+        Demand varies according to location...
+        Fruit and vegetable sales could be demographically aligned to Bengal if a customer is staying at CR Park [in Delhi]. Similarly, those things may be of little value in a place like Rohini, which is inhabited by people from Haryana and Uttar Pradesh..
+        Unlike other online grocery platforms that require consumers to pre-order product and have them shipped, VegEase allows customers to touch, sound, and handpick the fruits and vegetables at the time of purchase.
+        They do just what they will do in a typical mandi, but from the comfort of their own homes. "We're keeping the old thela tradition alive, but in a new package" Mayank says:
+        He Goes on to clarify the need for such a service, saying
+        "During the pandemic, people were accustomed to purchasing fruits and vegetables online. However, the issue with online grocery is that you are limited to what they offer. Often the packaging is incorrect, and other times the consistency is subpar. When a cart arrives at your door, you can pick from the stock and do not have to depend on what is delivered."
+    </p>
+</body>
+</html>
