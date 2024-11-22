@@ -3,97 +3,147 @@
 <head>
 	<title>Contact Us</title>
     <link rel="icon" href="https://sweetjane.qodeinteractive.com/wp-content/uploads/2018/11/shop-img-12.jpg" type="image/jpg">
-	<link rel="stylesheet" type="text/css" href="style2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
+        body {
+            background-color: #fbeae5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Menu Bar */
+        .menubar {
+            background-color: #76c7c0;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .menubar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menubar a:hover {
+            color: #fbeae5;
+        }
+
+        /* Heading Section */
         .heading {
             text-align: center;
             color: rgb(29, 161, 53);
             background-color: white;
-            font-family: Aboreto;
+            font-family: 'Aboreto', cursive;
             font-size: 40px;
-            padding: 12px;
-        }
-        
-        body {
-            background-color: #e49986;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
+        /* Contact Form */
         .contact-form-2 {
-            background-color: #fff;
-            width: 40%;
-            margin: 40px auto;
-            padding: 20px;
+            background-color: #ffffff;
+            width: 50%;
+            margin: 30px auto;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form-2 h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
         }
 
         .form-group {
             margin-bottom: 20px;
         }
 
-        .form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
+        .form-group input[type="text"], 
+        .form-group input[type="email"], 
+        .form-group textarea {
             width: 100%;
-            padding: 10px;
-            border: none;
+            padding: 15px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
+            font-size: 14px;
+        }
+
+        .form-group input[type="text"]:focus, 
+        .form-group input[type="email"]:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #76c7c0;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(118, 199, 192, 0.5);
         }
 
         .form-group input[type="submit"] {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
+            background-color: #76c7c0;
+            color: white;
+            padding: 12px 25px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
         .form-group input[type="submit"]:hover {
-            background-color: #3e8e41;
+            background-color: #5aa89b;
         }
 
-        .pointer {
+        /* Social Icons */
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
             cursor: pointer;
-            height: 40px;
+            height: 50px;
             margin: 0 10px;
+            transition: transform 0.3s ease;
         }
 
-        .menubar a {
-            text-decoration: none;
-            color: inherit;
-            margin: 0 15px;
+        .social-icons img:hover {
+            transform: scale(1.1);
         }
 
-        /* Media Query for smaller screens */
+        /* Responsive Design */
         @media (max-width: 768px) {
             .contact-form-2 {
                 width: 80%;
-                padding: 15px;
-            }
-            
-            .heading {
-                font-size: 30px;
-                padding: 8px;
-            }
-            
-            .pointer {
-                height: 30px;
+                padding: 20px;
             }
 
-            .menubar {
-                text-align: center;
+            .heading {
+                font-size: 30px;
+                padding: 15px;
+            }
+
+            .social-icons img {
+                height: 40px;
+            }
+
+            .menubar a {
+                margin: 0 10px;
                 font-size: 14px;
-                padding: 10px;
             }
         }
 
-        /* Media Query for very small screens */
         @media (max-width: 480px) {
             .contact-form-2 {
                 width: 90%;
@@ -103,38 +153,30 @@
                 font-size: 24px;
             }
 
-            .form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
-                font-size: 14px;
-            }
-
-            .form-group input[type="submit"] {
-                padding: 8px 16px;
-            }
-
             .menubar a {
-                margin: 0 10px;
+                margin: 0 5px;
                 font-size: 12px;
             }
 
-            .pointer {
-                height: 25px;
+            .social-icons img {
+                height: 35px;
                 margin: 0 5px;
             }
         }
     </style>
 </head>
 <body>
-    <p class="menubar">
+    <div class="menubar">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT US</a>
         <a href="products.html">PRODUCTS</a>
         <a href="location.html">LOCATION</a>
-    </p>
+    </div>
 
     <p class="heading">Contact Us - Fresh veggies are waiting!</p> 
        
 	<div class="contact-form-2">
-		<h2>Contact Us</h2>
+		<h2>Get in Touch</h2>
 		<form>
 			<div class="form-group">
 				<input type="text" id="name" name="name" placeholder="Your Name">
@@ -151,11 +193,11 @@
 		</form>
 	</div>
 
-    <div style="text-align:center; padding: 20px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" class="pointer" alt="Social Icon"/>
-        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670032.png" class="pointer" alt="Social Icon"/>
-        <img src="https://cdn-icons-png.flaticon.com/128/2504/2504839.png" class="pointer" alt="Social Icon"/>
-        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" class="pointer" alt="Social Icon"/>
+    <div class="social-icons">
+        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="WhatsApp Icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670032.png" alt="Instagram Icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/2504/2504839.png" alt="Facebook Icon">
+        <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="Twitter Icon">
     </div>
 </body>
 </html>
