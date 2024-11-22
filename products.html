@@ -10,132 +10,168 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <style>
-        .heading {
-            text-align: center;
-            color: rgb(29, 161, 53);
-            font-family: Aboreto;
-            font-size: 30px;
-            padding: 12px;
-        }
-        
-        .card-container1 {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap; 
-        }
-        
-        .sweet1 {
-            background-color: rgb(187, 236, 171);
-            width: 200px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            border: 4px double rgb(20, 168, 57);
-            margin: 20px;
-            text-align: center;
-            transition: background-color 0.3s ease;
-        }
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
 
-        .sweet1:hover {
-            background-color: #4ec256;
-        }
+/* Navbar */
+.nav {
+    background-color: #4caf50;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .sweet-img1 {
-            height: 180px;
-            width: 200px;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-        }
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
 
-        .btn {
-            background-color: #92caa0;
-            padding: 8px 25px;
-            border-radius: 30px;
-            border: none;
-            display: block;
-            margin: 10px auto;
-            cursor: pointer;
-        }
+.nav a:hover {
+    color: #ffcc00;
+}
 
-        .nav {
-            background-color: rgb(187, 236, 171);
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            align-items: center;
-        }
+/* Heading */
+.heading {
+    text-align: center;
+    color: #2d6a4f;
+    font-family: 'Aboreto', cursive;
+    font-size: 32px;
+    padding: 20px;
+    margin: 20px 0;
+    background: linear-gradient(to right, #e8f5e9, #d1fae5);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
 
-        .nav a {
-            text-decoration: none;
-            color: #000;
-        }
+/* Cards Container */
+.card-container1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+}
 
-        
-        @media (max-width: 1024px) {
-            .card-container1 {
-                justify-content: center;
-            }
+/* Card */
+.sweet1 {
+    background-color: white;
+    width: 220px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-            .sweet1 {
-                width: 180px;
-                margin: 10px;
-            }
-        }
+.sweet1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-        @media (max-width: 768px) {
-            .card-container1 {
-                flex-direction: column;
-                align-items: center;
-            }
+.sweet-img1 {
+    height: 180px;
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
-            .sweet1 {
-                width: 90%;
-                max-width: 250px;
-            }
+/* Button */
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
 
-            .heading {
-                font-size: 24px;
-            }
+.btn:hover {
+    background-color: #388e3c;
+}
 
-            .nav {
-                flex-direction: column;
-                gap: 10px;
-                height: auto;
-                padding: 10px 0;
-            }
-        }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .card-container1 {
+        justify-content: center;
+    }
 
-        @media (max-width: 480px) {
-            .sweet-img1 {
-                height: 150px;
-                width: 100%;
-            }
+    .sweet1 {
+        width: 200px;
+    }
+}
 
-            .sweet1 {
-                width: 100%;
-                max-width: 200px;
-                margin: 15px auto;
-            }
+@media (max-width: 768px) {
+    .card-container1 {
+        flex-direction: column;
+        align-items: center;
+    }
 
-            .heading {
-                font-size: 20px;
-            }
+    .sweet1 {
+        width: 90%;
+        max-width: 300px;
+    }
 
-            .btn {
-                padding: 5px 15px;
-            }
+    .heading {
+        font-size: 28px;
+    }
 
-            .nav {
-                flex-direction: column;
-                text-align: center;
-                gap: 5px;
-            }
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
 
-            .nav a {
-                font-size: 14px;
-            }
-        }
+@media (max-width: 480px) {
+    .sweet-img1 {
+        height: 150px;
+        width: 100%;
+    }
+
+    .sweet1 {
+        width: 100%;
+        max-width: 250px;
+        margin: 15px auto;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .btn {
+        padding: 8px 18px;
+    }
+
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 <body>
